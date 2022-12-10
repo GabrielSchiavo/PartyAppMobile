@@ -26,13 +26,13 @@
 * Os eventos constarão: localização, data e hora, valor do ingresso (com opção de compra), número de pessoas que compraram ingresso, a atração da noite, estilo musical e contará com fotos do ambiente.
 
 ## :hammer: Funcionalidades do projeto
-* `Login e cadastro de usuários`: tela de login e tela de cadastro de novos usuários com criptografia de senha.
+* `Login e cadastro de usuários:` tela de login e tela de cadastro de novos usuários com criptografia de senha.
 
-* `Cadastro de eventos`: cadastro dos eventos com nome, estilo musical, local, data, preço do ingresso e imagem.
-<!-- * `Uploads de imagens`: upload de imagem para os eventos. -->
-* `Exibição dos eventos cadastrados`: exibição na tela Home de todos os eventos cadastrados no banco de dados.
+* `Cadastro de eventos:` cadastro dos eventos com nome, estilo musical, local, data, preço do ingresso e imagem.
+<!-- * `Uploads de imagens:` upload de imagem para os eventos. -->
+* `Exibição dos eventos cadastrados:` exibição na tela Home de todos os eventos cadastrados no banco de dados.
   
-* `Pesquisa de eventos`: opção de pesquisar eventos pelo nome, estilo musical ou local.
+* `Pesquisa de eventos:` opção de pesquisar eventos pelo nome, estilo musical ou local.
 
 <br>
 <div display: inline_block align="center">
@@ -49,20 +49,30 @@ Após baixar o projeto, você pode abrir com o Visual Studio Code. Para o projet
 
 Em seguida, abra um terminal e execute:
 
-* npm install --global expo-cli
+```bash
+npm install --global expo-cli
+```
 
 Nos arquivos do projeto abra o arquivo config.json na pasta /config e edite as configurações do banco em "development": para as suas configurações escolhidas durante a instalação do MySQL, e altere a configuração "urlRootNode": para o IP do seu PC.
 
-Após abra um novo terminal na raiz do projeto e execute:
-
-* npm install
-* npm install -g nodemon
-* npx sequelize-cli db:migrate
-* expo start
+Após abra um novo terminal na raiz do projeto e execute os seguintes comandos:
+```bash
+npm install
+```
+```bash
+npm install -g nodemon
+```
+```bash
+npx sequelize-cli db:migrate
+```
+```bash
+expo start
+```
 
 Em outro terminal na raiz do projeto execute:
-
-* nodemon Controller
+```bash
+nodemon Controller
+```
 
 Agora o projeto está pronto para uso. 
 
